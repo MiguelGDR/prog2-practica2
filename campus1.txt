@@ -1,0 +1,50 @@
+José Puentes
+1111111A
+27 M
+Telématica
+Fútbol sala
+Ana López
+2222222B
+23 F
+Sonido e Imagén
+Voleibol,Baloncesto
+Vicente Cuenca
+3333333C
+18 M
+Sistemas Electrónicos
+
+María Salvia
+4444444D
+17 F
+Telemática
+Fútbol sala,Baloncesto,Natación
+Juan Cantador
+5555555E
+24 M
+Sistemas de Telecomunicación
+Natación
+Araceli Sánchez
+6666666F
+19 F
+Sonido e Imagen
+ 
+Mario Moreno
+7777777G
+22 F
+Telemática
+Baloncesto,Natación
+Miriam Cantero
+8888888H
+21 F
+Sistemas Electrónicos
+Natación
+Alberto San Juan
+9999999I
+20 M
+Sonido e Imagen
+Baloncesto
+Elena Martín
+1010101J
+20 F
+Telemática
+Voleibol,Atletismo
