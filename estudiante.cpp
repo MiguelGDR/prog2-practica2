@@ -51,6 +51,16 @@ namespace  bblProgIIB{
         deportes = dep;
     }
 
+// Métodos para la práctica  "void mostrar() const"
+    void Estudiante::mostrar() const{
+        cout << endl;   // Para separar la información del estudiante de lo anterior escrito.
+        cout << nombre << endl;
+        cout << dni << endl;
+        cout << edad << endl;
+        cout << sexo << endl;
+        cout << grado << endl;
+    }
+
 // Métodos get() para acceder a los atributos privados
     std::string Estudiante::obtenerDni() const{
         return dni;
