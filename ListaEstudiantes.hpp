@@ -30,7 +30,7 @@ namespace bblProgIIB
         bool esta_llena() const;
         unsigned numeroEstudiantes() const;
         void insertar(unsigned indice, const Estudiante &nuevo_elemento); // Usar índice comenzando en 0
-        void eliminar(unsigned indice);                                 // Usar índice comenzando en 0
+        void eliminar(unsigned indice);                                   // Usar índice comenzando en 0
         void consultar(unsigned indice, Estudiante &elemento) const;      // Usar índice comenzando en 0
 
         ListaEstudiantes &operator=(const ListaEstudiantes &otraLista);
@@ -70,7 +70,7 @@ namespace bblProgIIB
         void mostrarLista();
 
     private:
-        static const unsigned MAX_ESTUDIANTES = 1000;
+        static const unsigned MAX_ESTUDIANTES = 1000;  // 1000 estudiantes en la lista
         std::array<Estudiante, MAX_ESTUDIANTES> lista;
         unsigned num;
         // Métodos auxiliares

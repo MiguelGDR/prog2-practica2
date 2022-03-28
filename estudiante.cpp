@@ -10,7 +10,7 @@ namespace  bblProgIIB{
     Estudiante::Estudiante(){
     } // Fin del constructor por defecto
 
-    // Constructor 
+    // Constructor definido
     Estudiante::Estudiante(const std::string &nNombre, const std::string &nDni, int nEdad, char nSexo, std::string nGrado, const TDeportes &nDeportes) : nombre(nNombre), dni(nDni), edad(nEdad), sexo(nSexo), grado(nGrado), deportes(nDeportes)
     {
         assert(nEdad>0);
