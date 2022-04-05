@@ -51,7 +51,7 @@ namespace  bblProgIIB{
         deportes = dep;
     }
 
-// Métodos para la práctica  "void mostrar() const"
+// Métodos para la práctica "void mostrar() const"
     void Estudiante::mostrar() const{
         cout << endl;   // Para separar la información del estudiante de lo anterior escrito.
         cout << nombre << endl;
@@ -84,6 +84,24 @@ namespace  bblProgIIB{
     
     TDeportes Estudiante::obtenerDeportes() const{
         return deportes;
+    }
+
+// Implementación del operador =
+    Estudiante &Estudiante::operator=(const Estudiante &otro){
+        if(this != &otro){
+            dni = otro.dni;
+            nombre = otro.nombre;
+            edad = otro.edad;
+            sexo = otro.sexo;
+            grado = otro.grado;
+            deportes = otro.deportes;
+        }
+        return *this;
+    }
+
+// Implementación del operador ==
+    bool Estudiante::operator==(const Estudiante &otro) const{
+        return this->dni == otro.dni && this->nombre == otro.nombre && this->edad == otro.edad && this->sexo == otro.sexo && this->grado == otro.grado;
     }
 
 } //Fin namespace bblProgIIB
