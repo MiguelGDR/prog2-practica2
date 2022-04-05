@@ -17,19 +17,20 @@ int main(){
     cout << "El estudiante 1 tiene " << edad << ", y su DNI es " << est1.obtenerDni() << endl;
 
     Estudiante est2 (est1);
+    Estudiante est3;
 
-    int edad2 = est2.obtenerEdad();
-    string grado2 = est2.obtenerGrado();
+    est3.mostrar();
 
-    cout << "El estudiante 2 tiene " << edad2 << " y estudia " << grado2 << endl; 
-
-    est2.asignarNombre("Bochan ChupaPijas");
-    est2.asignarDNI("69696969Y");
-
-    cout << endl << endl;
+    est3 = est1;
 
     est1.mostrar();
     est2.mostrar();
+    est3.asignarNombre("Enrique");
+    est3.mostrar();
+
+    if(est1 == est3){
+        cout << "Son iguales" << endl;
+    }
 
     system("pause");
     return 0;
