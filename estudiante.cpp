@@ -4,6 +4,7 @@
 
 using namespace std;
 
+
 namespace  bblProgIIB{
 // Contructores y Destructor
     // Constructor por defecto
@@ -48,7 +49,8 @@ namespace  bblProgIIB{
     }
 
     void Estudiante::asignarDeportes(const TDeportes &dep){
-        deportes = dep;
+        deportes.deportes = dep.deportes;
+        deportes.numdep = deportes.deportes.size();
     }
 
 // Métodos para la práctica "void mostrar() const"
