@@ -17,11 +17,12 @@ namespace bblProgIIB
 {
     const int MAX_DEP = 3;
     typedef std::array <std::string,MAX_DEP>TDep;
+
     typedef struct {
         TDep deportes;
         int numdep;
     }TDeportes;
-    
+
     typedef struct
     {
 	     uint16_t rojo, verde, azul;

@@ -34,33 +34,33 @@ namespace bblProgIIB
         void consultar(unsigned indice, Estudiante &elemento) const;      // Usar índice comenzando en 0
 
         ListaEstudiantes &operator=(const ListaEstudiantes &otraLista);
-        /* OPERADOR DE ASIGNACIÓN
-            Implementación
-        ListaEstudiantes &ListaEstudiantes::operator=(const ListaEstudiantes &otraLista)
-        {
-            if (this != &otralista)
-            {
-                lista = otraLista.lista;
-                num = otraLista.num;
-            }
-            return *this;
-        }*/
+                            /* OPERADOR DE ASIGNACIÓN
+                                Implementación
+                            ListaEstudiantes &ListaEstudiantes::operator=(const ListaEstudiantes &otraLista)
+                            {
+                                if (this != &otralista)
+                                {
+                                    lista = otraLista.lista;
+                                    num = otraLista.num;
+                                }
+                                return *this;
+                            }*/
 
         bool operator==(const ListaEstudiantes &otra) const;
-        /* OPERADOR DE COMPARACIÓN DE IGUALDAD
-           Implementación
-        bool ListaEstudiantes::operator==(const ListaEstudiantes &otra) const
-        {
-            bool ok = num == otra.num;
-            unsigned i = 0;
-            while (ok && i < num)
-            {
-                ok = lista[i] == otra.lista[i];
-                i++;
-            }
-            return ok;
-        }
-        */
+                            /* OPERADOR DE COMPARACIÓN DE IGUALDAD
+                            Implementación
+                            bool ListaEstudiantes::operator==(const ListaEstudiantes &otra) const
+                            {
+                                bool ok = num == otra.num;
+                                unsigned i = 0;
+                                while (ok && i < num)
+                                {
+                                    ok = lista[i] == otra.lista[i];
+                                    i++;
+                                }
+                                return ok;
+                            }
+                            */
 
         bool obtenerDatos(const std::string &fichero); // ¿Se podría hacer un constructor que leyera el fichero para iniciar la lista?
         bool guardarDatos(const std::string &fichero);
