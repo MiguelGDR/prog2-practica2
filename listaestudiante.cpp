@@ -156,18 +156,26 @@ namespace bblProgIIB{
             return contdep;
         }
 
-        /*ListaEstudiantes ListaEstudiantes::practica(TDeportes deportes){
-            
-        }*/
-
-       /* Estudiante ListaEstudiantes::menorEdad(){
-            int est;
-            for(unsigned i=0; i<lista.size(); i++){
-                lista[i].obtenerEdad();
+        ListaEstudiantes ListaEstudiantes::practica(TDeportes deportes){
+            ListaEstudiantes lista2;
+            int a=0;
+            for(unsigned i = 0; i < lista.size(); i++){
+                if(lista[i].obtenerDeportes().numdep >= deportes.numdep){
+                    lista2.lista[a] = lista[i];
+                    a++;
+                }
             }
+        }
 
+        Estudiante ListaEstudiantes::menorEdad(){
+            int est;
+            for(unsigned i=1; i<lista.size(); i++){
+                if(lista[i].obtenerEdad() > lista[0].obtenerEdad()){
+                    est = i;
+                }
+            }
             return lista[est];
-        }*/
+        }
 
         void ListaEstudiantes::mostrarLista(){
             int dep=0;
